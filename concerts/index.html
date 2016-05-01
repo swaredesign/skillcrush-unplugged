@@ -21,24 +21,102 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-		<div id="main-content">
+        <div id="main-content">
 			<header>
-			<h1 id="logo"><img style="width:100%" src="../img/logo.png" alt="Unplugged" />
-			</h1>
-			<nav>
-				<ul>
-					<li class="btn"><a href="../concerts/index.html"><i class="fa fa-music"></i>Concerts</a></li>
-					<li class="btn"><a href="../reviews/index.html"><i class="fa fa-headphones"></i>Reviews</a></li>
-					<li class="btn"><a href="../about/index.html"><i class="fa fa-users"></i>About Us</a>
-						<ul class="subnav">
-							<li class="btn"><a href="#">FAQ</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+				<h1 id="logo"><a href="../index.html"><img style="width:100%" src="../img/logo.svg" alt="Unplugged" /></a>
+				</h1>
+				<nav>
+					<ul>
+						<li class="btn"><a href="../concerts/index.html"><!--<i class="fa fa-music"></i>-->Concerts</a></li>
+						<li class="btn"><a href="../reviews/index.html"><!--<i class="fa fa-headphones"></i>-->Reviews</a></li>
+						<li class="btn"><a href="../about/index.html"><!--<i class="fa fa-users"></i>-->About Us</a>
+							<ul class="subnav">
+								<li class="btn"><a href="#">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			
+			
+			<section class="top-story">
+				<article class="top-story">
+					<figure class="top-img">
+						<img src="../img/concert6.png" alt="top concert photo" />
+					</figure>
+					<header class="top-info"><h1>Featured Concert</h1>
+					<p>Blurb text Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra. Blurb text Aenean euismod bibendum laoreet. </p></header>
+					<div id="subscribe-desktop">
+						<h2>Get the inside scoop</h2>
+						<p>Want to stay up to date? Love secret sales and surprise concerts? Subscribe to our newsletter below!</p>
+						<form class="newsletter-signup">
+							<input type="text" class="entry"/>
+							<input type="submit" class="btn" value="Sign Up" />
+						</form>
+					</div>
+				</article>
+				
+				<aside class="sidebar">
+					<div class="newsletter" id="non-desktop">
+						<h2>Newsletter Signup</h2>
+						<form class="newsletter-signup">
+							<input type="text" class="entry"/>
+							<input type="submit" class="btn" value="Sign Up" />
+						</form>						
+					</div>
+				</aside>
+			</section>
+			<!-- Concert Feed Section-->
+			<section class="feed">
+				<article class="feed-item">
+					<h3 class="feed-type">Reviews</h3>
+					<figure class="feed-img">
+						<img src="../img/concert2.png" alt="ill singer" />
+					</figure>
+					<h2><a href="#">Mute Math's Vitals Tour is a MUST-SEE</a></h2>
+					<p>Lorem Ipsum dolor sit amet.</p>
+				</article>
+				<article class="feed-item">
+					<h3 class="feed-type">Reviews</h3>
+					<figure class="feed-img">
+						<img src="../img/concert2.png" alt="ill singer" />
+					</figure>
+					<h2><a href="#">Sky Ferreira's new single - You Need This</a></h2>
+					<p>Lorem Ipsum dolor sit amet.</p>
+				</article>
+				<article class="feed-item">
+					<h3 class="feed-type">Reviews</h3>
+					<figure class="feed-img">
+						<img src="../img/concert2.png" alt="ill singer" />
+					</figure>
+					<h2><a href="#">Muse's European Tour: Eyeballs and Confetti</a></h2>
+					<p>Lorem Ipsum dolor sit amet.</p>
+				</article>
+				<article class="feed-item">
+					<h3 class="feed-type">Reviews</h3>
+					<figure class="feed-img">
+						<img src="../img/concert2.png" alt="ill singer" />
+					</figure>
+					<h2><a href="#">Latest Single from Radiohead - Who Is This?!</a></h2>
+					<p>Lorem Ipsum dolor sit amet.</p>
+				</article>
+				<article class="feed-item">
+					<h3 class="feed-type">Reviews</h3>
+					<figure class="feed-img">
+						<img src="../img/concert2.png" alt="ill singer" />
+					</figure>
+					<h2><a href="#">30 Seconds to Mars On the West Coast</a></h2>
+					<p>Lorem Ipsum dolor sit amet.</p>
+				</article>
+			</section>
 		</div>
+		
+		<footer>
+			<div id="footer-logo">
+				<img src="img/logo-footer.png" alt="footer logo unplugged" />
+			</div>
+		</footer>
+		
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="../js/plugins.js"></script>
