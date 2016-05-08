@@ -124,7 +124,7 @@ h1, h2, h3, h4 {
 	
 }
 h1 {
-	
+	margin-bottom: 16px;
 }
 h2 {
 	
@@ -218,6 +218,13 @@ nav i{
 	margin: 10px 10px 10px 0;
 	height:auto;
 }
+/*.top-box{
+	box-shadow: 0px 0px 30px #999999;
+	padding: 20px;
+	background: white;
+	width: 50%;
+	float: right;
+}*/
 /* Sidebar ===========*/
 aside {
 	
@@ -241,6 +248,8 @@ aside {
 float: left;}
 .upcoming {
 	display: none;
+	box-shadow: 0px 0px 30px #999999;
+	padding: 20px;
 }
 .faq {
 	display: none;
@@ -264,6 +273,9 @@ float: left;}
 }
 .feed-item {
 }
+#more.feed-item {
+	padding:0;
+}
 .feed-type {
 	font-size: 0.75em;
 	width:40%;
@@ -285,6 +297,7 @@ float: left;}
 	font-size: 1.2em;
 	width: 65%;
 	float:right;
+	margin-top: 0;
 }
 #more {
 	clear:both;
@@ -375,6 +388,7 @@ footer {
         width: 100%;
         clear:both;
 		/*border-top: 1px solid #666666;*/
+		margin-top: 25px;
     }
 #footer-logo{
         width:100%;
@@ -433,7 +447,7 @@ font-color: #006b74;
     nav {
 		width: 45%;
 		float: right;
-		padding-top: 20px;
+		padding-top: 0px;
     }
 	nav ul {
 		text-align:left;
@@ -585,6 +599,7 @@ font-color: #006b74;
 		width:100%;
 		float:left;
 		clear:both;
+		padding-top: 0;
 	}
 	.sidebar nav ul {
 		text-align:left;
