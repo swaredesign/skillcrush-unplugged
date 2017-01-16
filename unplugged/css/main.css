@@ -1,0 +1,895 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+	height:100%;
+	width:100%;
+	background-color: #fcfaf8;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* GLOBAL STYLES =====*/
+/* COLORS ============*/
+/* #660033
+ * #006b74 
+ * #c0a700
+ * #333333
+ * #666666*/
+body, html{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #333333;
+	height: 100%;
+}
+
+a {
+	font-weight: bold;
+	color: #660033;
+	text-decoration: none;
+}
+p{
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+h1, h2, h3, h4 {
+	font-family: 'Raleway', sans-serif;
+	
+}
+h1 {
+	margin-bottom: 16px;
+	clear: both;
+}
+h2 {
+	
+}
+h3 {
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+h4 {
+	
+}
+.btn {
+	background-color: #fcfaf8;
+	border: #006b74 1px solid;
+	color: #006b74;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.6em;
+	text-align: center;
+	padding: 1% 3%;
+	border-radius:2px;
+}
+.btn a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+li.btn {border:none}
+li.current {
+	border-bottom: 3px solid #372254;
+}
+.btn:hover {
+	background-color: #372254;
+	border: #fcfaf8 1px solid;
+}
+.btn:hover a{
+	color: #fcfaf8;	
+}
+input.btn:hover {
+	color: #fcfaf8;	
+}
+.entry {
+	padding: 1% 3%;
+	border: solid 2px #c0a700;
+}
+
+.upcoming p {
+	margin-top: 0;
+}
+img {
+	width: 100%;
+	height:auto;
+}
+
+
+/* general =====*/
+#main-content {
+	width: 96%;
+	padding: 0 2%;
+}
+nav {
+	margin: 0 auto;
+}
+nav ul{
+	list-style-type:none;
+	padding-left: 0;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul li{
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+	margin-bottom: 3%;
+	background-color: #fcfaf8;
+	padding: 2% 3%;
+}
+nav ul li a {
+	color: #006b74;
+}
+nav ul li.currentLink {
+   background-color: #fff;
+}
+nav ul li a.currentLink {
+   color: #006b74;
+}
+nav i{
+	padding-right:10px;
+}
+
+.subnav {
+	display:none;
+}
+/* Featured News =====*/
+.top-story {
+	width: 100%;
+	clear: both;
+}
+.top-info {
+	width: 100%;
+}
+.top-img {
+	width: 100%;
+	margin: 10px 10px 10px 0;
+	height:auto;
+	box-shadow: 0px 0px 30px #999999;
+}
+/*.top-box{
+	box-shadow: 0px 0px 30px #999999;
+	padding: 20px;
+	background: white;
+	width: 50%;
+	float: right;
+}*/
+/* Sidebar ===========*/
+aside {
+	
+}
+.sidebar {
+	width: 100%;
+}
+nav.sidebar ul li {
+	width: 100%;
+}
+.newsletter{
+	width: 100%;
+	text-align: left;
+	margin-bottom: 35px;
+}
+.newsletter h2 {
+	font-size: 1.2em;
+}
+/*#subscribe-desktop {
+	display:none;
+	padding-bottom:20px;
+}*/
+/*#non-desktop { display: block;
+float: left;}*/
+.upcoming {
+	display: none;
+	box-shadow: 0px 0px 30px #999999;
+	padding: 20px;
+}
+.faq {
+	display: none;
+}
+#below-map {
+	margin-top: 35px;
+}
+
+/* Feed ==============*/
+.feed {
+	width: 100%;
+	margin-top: 0;
+	padding-top: 0;
+}
+.feed p {
+	display: none;
+}
+
+.feed h3 {
+	float: left;
+}
+.feed-item {
+}
+#more.feed-item {
+	padding:0;
+}
+.feed-type {
+	font-size: 0.75em;
+	width:40%;
+	padding:0;
+	margin:0;
+	float:left;
+	clear:both;
+}
+.feed-img {
+	width: 30%;
+	padding:0;
+	margin: 0 10px 10px 0;
+	float:left;
+	clear:left;
+	height:auto;
+}
+
+.feed h2 {
+	font-size: 1.2em;
+	width: 65%;
+	float:right;
+	margin-top: 0;
+}
+#more {
+	clear:both;
+	text-align:center;
+	padding-top:10px;
+}
+.feed a {padding-top:20px;padding-bottom:20px;}
+
+/* Detail ============*/
+.reviews-img, .news-img {
+	width: 100%;
+	margin: 0px;
+	height:auto;
+}
+.detail-body {
+	clear: both;
+}
+.byline {
+	font-style: italic;
+}
+.article-meta-info {
+	color: #660033;
+	list-style-type: none;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+.article-meta-info li {
+	display: inline;
+	padding-right: 10px;
+}
+/* ABOUT PAGE ================================ */
+.mission{
+	width:100%;
+}
+.team{
+	
+}
+.team-member{
+	padding:15px 0px;
+}
+
+.team-name{
+	margin-bottom:0px;
+}
+.team-title{
+	margin-top:0px;
+}
+.team-description{
+	display:none;
+} 
+
+.team-img{
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:40%;
+	padding-bottom:40%;
+	float:left;
+	margin-right:20px;
+	border:1px solid #ccc;
+}
+
+#team-img-carol {
+	background-image:url('../img/team-carol.png');
+}
+#team-img-mary {
+	background-image:url('../img/team-mary.png');
+}
+#team-img-susan {
+	background-image:url('../img/team-susan.png');
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.map-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Footer =========================== */
+footer {
+        width: 100%;
+        clear:both;
+		/*border-top: 1px solid #666666;*/
+		margin-top: 25px;
+    }
+#footer-logo{
+        width:100%;
+        margin:auto;
+		padding-top: 5px;
+		opacity: 0.25;
+    }
+.social-follow {
+	width:100%;
+	padding-top:10px;
+}
+.social-follow ul {
+	list-style-type:none;
+	padding-left: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+.social-follow ul li {
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+.currentLink {
+font-color: #006b74;
+   background-color: #fff;
+}
+	
+	
+/* BREAKPOINTS =======*/
+/*
+@media (min-width:768px) {
+	html{
+		background-color:#660030;
+	}
+	body {
+		background-color: #fcfaf8;
+		max-width:1200px;
+		margin:auto;
+		-webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+		height: auto;
+	}
+	#main-content {
+		width: 85%;
+		padding: 0 2%;
+		margin: auto;
+	}
+	/* Header =========================== 
+	
+    #logo {
+		width: 40%;
+        float:left;
+		margin:0 auto;
+		margin-bottom: 20px;
+		padding-top: 10px;
+    }
+    nav {
+		width: 45%;
+		float: right;
+		margin-top: 20px;
+    }
+	nav ul {
+		text-align:left;
+	}
+	nav ul li {
+		padding: 1% 3% 1% 3%;
+	}
+	
+	/* Featured News Item =========================== 
+	
+    .top-story {
+        width:100%;
+    }
+    .top-img {
+        width:45%;
+        float:left;
+		margin-bottom:5%;
+		height:auto;
+    }
+    .top-info{
+        width:45%;
+        float:right;
+    }
+	.top-info h1 {
+		margin-top: 0;
+	}
+	#more {
+		text-align: left;
+	}
+	/* Side Bar =========================== 
+	
+    aside{
+    }
+    .sidebar {
+        clear:both;
+        width:45%;
+        float:right;
+    }
+    
+	.newsletter {
+		text-align: left;
+	}
+	#subscribe-desktop {
+		width:45%;
+        float:right;
+	}
+    .upcoming {
+        display:block;
+		float: left;
+    }
+	.upcoming h2 {
+		margin-top:0;
+	}
+    .faq {
+        display:block;
+		float: left;
+    }
+	.sidebar nav {
+		width:100%;
+		float:left;
+		clear:both;
+	}
+	/* News/Reviews Feed Section =========================== */
+	
+    .feed {
+        width:50%;
+        float:left;
+    }
+	.feed h2{
+		font-size: 1.2em;
+		line-height: 1.25em;
+		width: 60%;
+	}
+    .feed-img {
+        width:35%;
+    }
+	/*.feed p {
+		display: block;
+	}*/
+	/* Footer =========================== 
+    footer {
+        width: 100%;
+        clear:both;
+		
+    }
+    #footer-logo{
+        width:30%;
+        margin:auto;
+		padding-top: 25px;
+		opacity: 0.25;
+    }
+	/* DETAILED PAGES ================================ 
+	
+   .reviews-img, .news-img{
+        width:45%;
+        float:left;
+		clear:both;
+		padding: 0;
+		margin: 20px 20px 20px 0;
+    }
+    .detail-title{
+	width:40%;
+        float:left;
+		margin-bottom: 20px;
+    }
+	.detail-body {
+		clear: both;
+		width: 70%;
+		margin: auto;
+	}
+    aside.detail{
+        width:100%;    
+    }
+    .detail .newsletter h2{
+        display:inline;
+    }
+    .detail .newsletter input{
+        display:inline;
+    }
+	.team-description{
+		display:inline;
+	} 
+}
+*/
+
+@media (min-width:940px) {
+	#main-content {
+		width: 85%;
+		margin: auto;
+	}
+	/* Header =========================== */
+	#logo {
+        width: 45%;
+        float:left;
+		margin:0 auto;
+		margin-bottom: 35px;
+		padding-top: 20px;
+    }
+    nav {
+		width: 50%;
+		float: right;
+		padding-top: 20px;
+    }
+	nav ul {
+		text-align:right;
+	}
+	nav ul li {
+		padding: 1% 8% 1% 8%;
+	}
+	.sidebar nav {
+		width:100%;
+		float:left;
+		clear:both;
+		padding-top: 0;
+	}
+	.sidebar nav ul {
+		text-align:left;
+		
+	}
+    
+	/* Featured News Item =========================== */
+	
+    .top-story {
+        width:100%;
+    }
+    .top-img {
+        width:45%;
+        float:left;
+		height:auto;
+    }
+    .top-info{
+        width:50%;
+        float:right;
+    }
+	/* Side Bar =========================== */
+	
+    aside{
+    }
+    .sidebar {
+        clear:both;
+        width:45%;
+        float:right;
+    }
+    .newsletter {
+		float: left;
+		width: 45%;
+    }
+	#subscribe-desktop {
+		width:50%;
+        float:right;
+	}
+	/*#non-desktop {
+		display: none;
+	}*/
+    .upcoming {
+        display:block;
+    }
+    .faq {
+        display:block;
+    }
+	/* News/Reviews Feed Section =========================== */
+	
+    .feed {
+        width:45%;
+        float:left;
+    }
+	.feed-info{
+        width:50%;
+        float:left;
+		margin-top: 0px;
+    }
+    .feed-img {
+        width:35%;
+		float: left;
+		height:auto;
+    }
+	/* Footer =========================== */
+    footer {
+        width: 100%;
+        clear:both;
+    }
+    #footer-logo{
+        width:30%;
+        margin:auto;
+    }
+	/* DETAILED PAGES ================================ */
+	
+    .reviews-img, .news-img{
+        width:45%;
+        margin-bottom:20px;
+        float:left;
+		clear:both;
+		height:auto;
+    }
+	.detail-body {
+		clear: both;
+		width: 50%;
+		float: right;
+	}
+    .detail-title{
+        width:40%;
+        float:left;
+    }
+   
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
