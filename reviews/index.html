@@ -21,38 +21,58 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-			<h1 id="logo"><img src="../img/logo.png" alt="Unplugged" /></h1>
+        <div id="main-content">
+			<header>
+			<h1 id="logo"><a href="../index.html"><img style="width:100%" src="../img/logo.svg" alt="Unplugged"/></a>
+			</h1>
 			<nav>
 				<ul>
-					<li class="btn"><a href="../concerts/index.html"><i class="fa fa-music"></i>Concerts</a></li>
-					<li class="btn"><a href="../reviews/index.html"><i class="fa fa-headphones"></i>Reviews</a></li>
-					<li class="btn"><a href="../about/index.html"><i class="fa fa-users"></i>About Us</a>
+					<li class="btn"><a href="../concerts/index.html"><!--<i class="fa fa-music"></i>-->Concerts</a></li>
+					<li class="btn"><a href="../reviews/index.html"><!--<i class="fa fa-headphones"></i>-->Reviews</a></li>
+					<li class="btn"><a href="../about/index.html"><!--<i class="fa fa-users"></i>-->About</a>
 						<ul class="subnav">
 							<li class="btn"><a href="#">FAQ</a></li>
 						</ul>
 					</li>
 				</ul>
-			</nav>
+		</nav>
 		</header>
 		
-		<div id="main-content">
+		
 			<section class="top-story">
 				<article class="top-story">
 					<figure class="top-img">
-						<img scr="img/top-review-photo.png" alt="top review photo" />
+						<img src="../img/concert2.png" alt="top review photo" />
 					</figure>
-					<header><h1>Featured Review</h1></header>
-					<p>Blurb text Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra. Blurb text Aenean euismod bibendum laoreet. </p>
+					<header class="top-info"><h1>Featured Review</h1>
+					<p>Blurb text Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra. Blurb text Aenean euismod bibendum laoreet. </p></header>
+					<div id="subscribe-desktop">
+						<h2>Get the inside scoop</h2>
+						<p>Want to stay up to date? Love secret sales and surprise concerts? Subscribe to our newsletter below!</p>
+						<form class="newsletter-signup">
+							<input type="text" class="entry"/>
+							<input type="submit" class="btn" value="Sign Up" />
+						</form>
+					</div>
 				</article>
 				
 				<aside class="sidebar">
-					<div class="newsletter">
+					<div class="newsletter" id="non-desktop">
 						<h2>Newsletter Signup</h2>
 						<form class="newsletter-signup">
 							<input type="text" class="entry"/>
-							<input type="submit" class="btn" value="Find Out How to Write Reviews for Us" />
+							<input type="submit" class="btn" value="Sign Up" />
 						</form>						
+					</div>
+					<div class="upcoming">
+						<h2>Upcoming Concerts</h2>
+						<p><a>Lorem ipsum dolor</a> sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+						<h3>MuteMath</h3><p>Manhattan, October 9</p>
+						<h3>Muse</h3><p>Singapore, October 10</p>
+						<h3>30 Seconds to Mars</h3><p>Melbourne, October 10</p>
+						
+						<nav class="sidebar"><ul><li class="btn"><a href="concerts/index.html">See more concerts</a></li></ul></nav>
+						
 					</div>
 				</aside>
 			</section>
@@ -61,7 +81,7 @@
 				<article class="feed-item">
 					<h3 class="feed-type">Reviews</h3>
 					<figure class="feed-img">
-						<img src="img/feed-1.png" alt="ill singer" />
+						<img src="../img/concert2.png" alt="ill singer" />
 					</figure>
 					<h2><a href="#">Mute Math's Vitals Tour is a MUST-SEE</a></h2>
 					<p>Lorem Ipsum dolor sit amet.</p>
@@ -69,7 +89,7 @@
 				<article class="feed-item">
 					<h3 class="feed-type">Reviews</h3>
 					<figure class="feed-img">
-						<img src="img/feed-1.png" alt="ill singer" />
+						<img src="../img/concert2.png" alt="ill singer" />
 					</figure>
 					<h2><a href="#">Sky Ferreira's new single - You Need This</a></h2>
 					<p>Lorem Ipsum dolor sit amet.</p>
@@ -77,7 +97,7 @@
 				<article class="feed-item">
 					<h3 class="feed-type">Reviews</h3>
 					<figure class="feed-img">
-						<img src="img/feed-1.png" alt="ill singer" />
+						<img src="../img/concert2.png" alt="ill singer" />
 					</figure>
 					<h2><a href="#">Muse's European Tour: Eyeballs and Confetti</a></h2>
 					<p>Lorem Ipsum dolor sit amet.</p>
@@ -85,7 +105,7 @@
 				<article class="feed-item">
 					<h3 class="feed-type">Reviews</h3>
 					<figure class="feed-img">
-						<img src="img/feed-1.png" alt="ill singer" />
+						<img src="../img/concert2.png" alt="ill singer" />
 					</figure>
 					<h2><a href="#">Latest Single from Radiohead - Who Is This?!</a></h2>
 					<p>Lorem Ipsum dolor sit amet.</p>
@@ -93,7 +113,7 @@
 				<article class="feed-item">
 					<h3 class="feed-type">Reviews</h3>
 					<figure class="feed-img">
-						<img src="img/feed-1.png" alt="ill singer" />
+						<img src="../img/concert2.png" alt="ill singer" />
 					</figure>
 					<h2><a href="#">30 Seconds to Mars On the West Coast</a></h2>
 					<p>Lorem Ipsum dolor sit amet.</p>
@@ -102,9 +122,14 @@
 		</div>
 		
 		<footer>
-			<div id="footer-logo">
-				<img src="img/logo-footer.png" alt="footer logo unplugged" />
-			</div>
+				<div id="footer-logo">
+					<img src="../img/logo.svg" alt="footer logo unplugged" />
+				</div>
+		<div class="social-follow">
+			<ul><li><i class="fa fa-facebook fa-2x"></i></li>
+				<li><i class="fa fa-twitter fa-2x"></i></li>
+			<li><i class="fa fa-instagram fa-2x"></i></li></ul>
+		</div>
 		</footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
